@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconn"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconn"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Digividya"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.example.digividya.login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.digividya.MainActivity"></activity>
+        <activity android:name="com.example.digividya.QuizzesActivity"></activity>
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".LiveClassesActivity"></activity>
+        <activity android:name=".RecordedLecturesActivity"></activity>
+        <activity android:name=".cclass9"></activity>
+        <activity android:name=".cclass10"></activity>
+        <activity android:name=".cclass11"></activity>
+        <activity android:name=".cclass12"></activity>
+        <activity android:name=".cmath9"></activity>
+        <activity android:name=".csci9"></activity>
+        <activity android:name=".csst9"></activity>
+        <activity android:name=".ceng9"></activity>
+        <activity android:name=".cmaths10"></activity>
+        <activity android:name=".register"></activity>
+        <activity android:name="com.example.digividya.profile"></activity>
+        <activity android:name=".Qprolos"></activity>
+        <activity android:name=".todo"></activity>
+    <activity android:name=".dictionary"></activity>
+        <activity android:name=".YouTubePlayerActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input field for task name -->
+    <EditText
+        android:id="@+id/task_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Input field for task quantity -->
+    <EditText
+        android:id="@+id/task_quantity_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Time"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+    <Spinner
+        android:id="@+id/timer_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/timer_options" />
+
+    <EditText
+        android:id="@+id/custom_timer_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter custom time (minutes)"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+
+    <!-- Buttons for Save and Cancel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+
+    </LinearLayout>
+</LinearLayout>
