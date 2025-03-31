@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class RecordedLecturesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.recorded)
+        setContentView(R.layout.clases)
 
         // Button variables
         val class9 : Button= findViewById(R.id.class9)

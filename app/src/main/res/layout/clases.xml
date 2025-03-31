@@ -7,10 +7,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/crtask"
+        android:background="@drawable/cr35"
         android:text="Select your Class"
         android:textColor="#070606"
         android:textSize="26dp"
@@ -26,7 +26,6 @@
         android:layout_width="414dp"
         android:layout_height="619dp"
         android:background="@drawable/cr35"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -35,7 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_gravity="center">
             >
 
             <LinearLayout
@@ -47,25 +45,31 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="195dp"
+                    android:layout_width="200dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/maths"
-                    />
+                    app:srcCompat="@drawable/c9" />
 
                 <Button
-                    android:id="@+id/math10"
+                    android:id="@+id/class9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
-                    android:text=" MATHS"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Class 9"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Subjects : \n English \n Science \n Maths \n Social Science \n"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
@@ -73,30 +77,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="195dp"
+                    android:layout_width="200dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:paddingLeft="0dp"
-                    app:srcCompat="@drawable/eng" />
-
+                    app:srcCompat="@drawable/c10" />
 
                 <Button
-                    android:id="@+id/eng10"
+                    android:id="@+id/class10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-                    android:text="ENGLISH"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Class 10"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Subjects : \n English \n Science \n Maths \n Social Science \n"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
@@ -108,53 +117,66 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="195dp"
+                    android:layout_width="200dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/sci" />
+                    app:srcCompat="@drawable/c11" />
 
                 <Button
-                    android:id="@+id/sci10"
+                    android:id="@+id/class11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
-                    android:text="SCIENCE"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Class 11"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Subjects : \n English \n P C M \n Biology \n Pol. Science \n History"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="195dp"
+                    android:layout_width="200dp"
                     android:layout_height="140dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/sst" />
+                    app:srcCompat="@drawable/c12" />
 
                 <Button
-                    android:id="@+id/sst10"
+                    android:id="@+id/class12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
-                    android:text="SOCAIL SCIENCE"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:text="Class 12"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Subjects : \n English \n P C M \n Biology \n Pol. Science \n History"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
         </LinearLayout>
