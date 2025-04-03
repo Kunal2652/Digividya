@@ -1,19 +1,15 @@
-package com.example.digividya.class10
+package com.example.digividya.clases
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.digividya.R
-import com.example.digividya.clases.cclass10
-import com.example.digividya.clases.cclass11
-import com.example.digividya.clases.cclass12
-import com.example.digividya.clases.cclass9
 
 class RecordedLecturesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setContentView(R.layout.clases)
         // Button variables
         val class9 : Button= findViewById(R.id.class9)
         val class10 : Button = findViewById(R.id.class10)

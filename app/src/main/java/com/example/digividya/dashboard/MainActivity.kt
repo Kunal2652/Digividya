@@ -8,9 +8,9 @@ import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.digividya.quizes.QuizzesActivity
 import com.example.digividya.R
-import com.example.digividya.class10.RecordedLecturesActivity
+import com.example.digividya.clases.RecordedLecturesActivity
 import com.example.digividya.dictionary.dictionary
-import com.example.digividya.notes.notess
+import com.example.digividya.notes.Notess
 
 import com.example.digividya.task.todo
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val dictionary1: Button = findViewById(R.id.dictionary1)
         // Navigation
         btnnotes.setOnClickListener {
-            navigateTo(notess::class.java)
+            navigateTo(Notess::class.java)
         }
         dictionary1.setOnClickListener {
             val intent = Intent(this, dictionary::class.java)

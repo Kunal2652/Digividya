@@ -17,33 +17,40 @@
         tools:targetApi="31">
 
         <activity
-            android:name="com.example.digividya.login"
+            android:name="com.example.digividya.login.login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.digividya.MainActivity"></activity>
-        <activity android:name="com.example.digividya.QuizzesActivity"></activity>
-        <activity android:name=".ResultActivity"></activity>
-        <activity android:name=".LiveClassesActivity"></activity>
-        <activity android:name=".RecordedLecturesActivity"></activity>
-        <activity android:name=".cclass9"></activity>
-        <activity android:name=".cclass10"></activity>
-        <activity android:name=".cclass11"></activity>
-        <activity android:name=".cclass12"></activity>
-        <activity android:name=".cmath9"></activity>
-        <activity android:name=".csci9"></activity>
-        <activity android:name=".csst9"></activity>
-        <activity android:name=".ceng9"></activity>
-        <activity android:name=".cmaths10"></activity>
-        <activity android:name=".register"></activity>
-        <activity android:name="com.example.digividya.profile"></activity>
-        <activity android:name=".Qprolos"></activity>
-        <activity android:name=".todo"></activity>
-    <activity android:name=".dictionary"></activity>
-        <activity android:name=".YouTubePlayerActivity"></activity>
+        <activity android:name="com.example.digividya.dashboard.MainActivity"></activity>
+        <activity android:name="com.example.digividya.quizes.QuizzesActivity"></activity>
+        <activity android:name="com.example.digividya.quizes.ResultActivity"></activity>
+
+        <activity android:name="com.example.digividya.clases.RecordedLecturesActivity"></activity>
+        <activity android:name="com.example.digividya.clases.cclass9"></activity>
+        <activity android:name="com.example.digividya.clases.cclass10"></activity>
+        <activity android:name="com.example.digividya.clases.cclass11"></activity>
+        <activity android:name="com.example.digividya.clases.cclass12"></activity>
+        <activity android:name="com.example.digividya.class9.cmath9"></activity>
+        <activity android:name="com.example.digividya.class9.csci9"></activity>
+        <activity android:name="com.example.digividya.class9.csst9"></activity>
+        <activity android:name="com.example.digividya.class9.ceng9"></activity>
+        <activity android:name="com.example.digividya.class10.cmaths10"></activity>
+        <activity android:name="com.example.digividya.login.register"></activity>
+        <activity android:name="com.example.digividya.dashboard.profile"></activity>
+        <activity android:name="com.example.digividya.quizes.Qprolos"></activity>
+        <activity android:name="com.example.digividya.task.todo"></activity>
+        <activity android:name="com.example.digividya.dictionary.dictionary"></activity>
+        <activity android:name="com.example.digividya.class10.YouTubePlayerActivity"></activity>
+        <activity android:name="com.example.digividya.notes.Notess"></activity>
+        <activity android:name="com.example.digividya.notes.nclas9"></activity>
+        <activity android:name="com.example.digividya.notes.nclas10"></activity>
+        <activity android:name="com.example.digividya.notes.nclas11"></activity>
+        <activity android:name="com.example.digividya.notes.nclas12"></activity>
+
+
     </application>
 
 </manifest>

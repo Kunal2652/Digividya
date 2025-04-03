@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/crtask"
-        android:text="Select your Class"
+        android:text="Select your Subject"
         android:textColor="#070606"
         android:textSize="26dp"
         android:textStyle="bold"

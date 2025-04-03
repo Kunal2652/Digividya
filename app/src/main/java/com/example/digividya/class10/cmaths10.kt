@@ -15,9 +15,7 @@ class cmaths10 : AppCompatActivity() {
 
         // Define button IDs and corresponding YouTube video IDs
         val buttonIds = intArrayOf(
-            R.id.videoButton1, R.id.videoButton2, R.id.videoButton3, R.id.videoButton4,
-            R.id.videoButton5, R.id.videoButton6, R.id.videoButton7, R.id.videoButton8,
-            R.id.videoButton9, R.id.videoButton10
+            R.id.c10m1, R.id.c10m2, R.id.c10m3, R.id.c10m4, R.id.c10m5, R.id.c10m6,R.id.c10m7, R.id.c10m8, R.id.c10m9, R.id.c10m10
         )
 
         val videoIds = arrayOf(
