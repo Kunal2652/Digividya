@@ -1,247 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/clases"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/clases">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:padding="5dp"
-        android:background="@drawable/crtask"
-        android:text="Select your Subject"
-        android:textColor="#070606"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="414dp"
-        android:layout_height="619dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:background="@drawable/cr35"
-
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center">
-            >
+            android:padding="10dp">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="5dp"
+                android:background="@drawable/crtask"
+                android:text="Select your Subject"
+                android:textColor="#070606"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <!-- MATHS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/maths"
-                    />
+                    app:srcCompat="@drawable/maths"/>
 
                 <Button
                     android:id="@+id/c11math"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="MATHS"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
 
+            <!-- ENGLISH -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingLeft="0dp"
-                    app:srcCompat="@drawable/eng" />
-
+                    app:srcCompat="@drawable/eng"/>
 
                 <Button
                     android:id="@+id/c11eng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
                     android:text="ENGLISH"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
 
+            <!-- POLITICAL SCIENCE -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center"
                 android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/pol" />
+                    app:srcCompat="@drawable/pol"/>
 
                 <Button
                     android:id="@+id/c11pol"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="POLITICAL SCIENCE"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
 
+            <!-- HISTORY -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
+
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView8"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/his" />
+                    app:srcCompat="@drawable/his"/>
 
                 <Button
                     android:id="@+id/c11his"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="HISTORY"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
+
+            <!-- CHEMISTRY -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/chem" />
+                    app:srcCompat="@drawable/chem"/>
 
                 <Button
                     android:id="@+id/c11chem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="CHEMISTRY"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
+
+            <!-- PHYSICS -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView7"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phy" />
+                    app:srcCompat="@drawable/phy"/>
 
                 <Button
                     android:id="@+id/c11phy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="Physics"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
+
+            <!-- BIOLOGY -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="195dp"
                     android:layout_height="140dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/bio" />
+                    app:srcCompat="@drawable/bio"/>
 
                 <Button
                     android:id="@+id/c11bio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:backgroundTint="#FBFBF9"
-
                     android:text="BIOLOGY"
+                    android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
-
+                    android:textStyle="bold"/>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,13 @@
 package com.example.digividya.class10
 
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
 import android.os.Bundle
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.digividya.R
 
@@ -12,6 +15,8 @@ class YouTubePlayerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+
         setContentView(R.layout.activity_youtube_player)
 
         // Get the YouTube video ID from the intent
@@ -36,7 +41,6 @@ class YouTubePlayerActivity : AppCompatActivity() {
             }
         }
 
-        // Optionally, handle full-screen mode for WebView
-        youtubeWebView.webChromeClient = WebChromeClient()
+
     }
 }

@@ -31,7 +31,7 @@
             android:scaleType="fitXY" />
 
         <ImageButton
-            android:id="@+id/quizzesb"
+            android:id="@+id/quizzbtn"
             android:layout_width="47dp"
             android:layout_height="57dp"
             android:background="@drawable/quiz"
@@ -48,7 +48,7 @@
             android:orientation="vertical"></LinearLayout>
 
         <ImageButton
-            android:id="@+id/dictionaryb"
+            android:id="@+id/dictionarybtn"
             android:layout_width="53dp"
             android:layout_height="49dp"
             android:layout_marginEnd="56dp"
@@ -114,7 +114,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/ri675zpu6i0j"
+                            android:id="@+id/user"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="0dp"
@@ -178,7 +178,7 @@
                         android:paddingVertical="5dp">
 
                         <SearchView
-                            android:id="@+id/ropqvdaxf8i"
+                            android:id="@+id/search1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -215,33 +215,16 @@
                     <ViewFlipper
                         android:id="@+id/viewFlipper"
                         android:layout_width="match_parent"
-                        android:layout_height="164dp"
+                        android:layout_height="180dp"
                         android:layout_marginHorizontal="16dp"
                         android:layout_marginBottom="49dp">
 
                         <ImageView
+                            android:id="@+id/animate"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="215dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/dash1" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/dash2" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/dash1" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/dash2" />
+                            android:src="@drawable/team" />
 
                     </ViewFlipper>
 
@@ -282,8 +265,8 @@
 
                                 <ImageView
                                     android:id="@+id/rli8l7kjvzs"
-                                    android:layout_width="232dp"
-                                    android:layout_height="143dp"
+                                    android:layout_width="230dp"
+                                    android:layout_height="145dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/lecture" />
                             </LinearLayout>
@@ -314,8 +297,8 @@
 
                             <com.google.android.material.imageview.ShapeableImageView
                                 android:id="@+id/rwcd65fv63li"
-                                android:layout_width="231dp"
-                                android:layout_height="135dp"
+                                android:layout_width="230dp"
+                                android:layout_height="130dp"
                                 android:layout_marginHorizontal="25dp"
                                 android:layout_marginBottom="19dp"
                                 android:scaleType="fitXY"
@@ -325,6 +308,7 @@
                                 android:id="@+id/btnnotes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="#38B8EF"
                                 android:layout_marginStart="23dp"
                                 android:layout_marginBottom="6dp"
                                 android:text="Notes"
@@ -360,6 +344,7 @@
                                 android:layout_marginStart="23dp"
                                 android:layout_marginBottom="6dp"
                                 android:text="Quiz"
+                                android:backgroundTint="#38B8EF"
                                 android:textColor="#000000"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -392,6 +377,7 @@
                                 android:layout_marginStart="23dp"
                                 android:layout_marginBottom="6dp"
                                 android:text="Dictionary"
+                                android:backgroundTint="#38B8EF"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -424,6 +410,7 @@
                                 android:layout_marginStart="23dp"
                                 android:layout_marginBottom="6dp"
                                 android:text="Task Managment"
+                                android:backgroundTint="#38B8EF"
                                 android:textColor="#000000"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -432,6 +419,20 @@
                     </LinearLayout>
                 </HorizontalScrollView>
 
+                <CalendarView
+                    android:id="@+id/calenderr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="310dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/crtask"
+                    android:theme="@style/TextAppearance.AppCompat.Display3" />
+                <VideoView
+                    android:id="@+id/videos"
+                    android:layout_width="365dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

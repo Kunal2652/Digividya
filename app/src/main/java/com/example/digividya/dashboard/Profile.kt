@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 
-class profile : AppCompatActivity() {
+class Profile : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
@@ -40,7 +40,7 @@ class profile : AppCompatActivity() {
         setContentView(R.layout.profile)
 
         auth = FirebaseAuth.getInstance()
-        database = FirebaseDatabase.getInstance().reference.child("datauser")
+        database = FirebaseDatabase.getInstance().reference
         storage = FirebaseStorage.getInstance()
 
         profileImageView = findViewById(R.id.profileImageView)
@@ -54,6 +54,8 @@ class profile : AppCompatActivity() {
         setEditable(false)
 
         val userId = auth.currentUser?.uid
+        Log.d("ProfileActivity", "Current user ID: $userId")
+
         if (userId != null) {
             fetchUserData(userId)
         } else {
@@ -74,35 +76,39 @@ class profile : AppCompatActivity() {
     }
 
     private fun fetchUserData(userId: String) {
-        database.child(userId).addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    val user = snapshot.getValue(Users::class.java)
-                    if (user != null) {
-                        nameEditText.setText(user.name)
-                        usernameEditText.setText(user.username)
-                        mobileEditText.setText(user.mobile)
-                        emailEditText.setText(user.email)
+        database.child("datauser").child(userId)
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (snapshot.exists()) {
+                        Log.d("ProfileActivity", "User data found: ${snapshot.value}")
 
-                        // Load profile image
-                        if (user.imageUrl.isNotEmpty()) {
-                            Glide.with(this@profile)
-                                .load(user.imageUrl)
-                                .into(profileImageView)
+                        val user = snapshot.getValue(Users::class.java)
+                        if (user != null) {
+                            nameEditText.setText(user.name ?: "N/A")
+                            usernameEditText.setText(user.username ?: "N/A")
+                            mobileEditText.setText(user.mobile ?: "N/A")
+                            emailEditText.setText(user.email ?: "N/A")
+
+                            if (!user.imageUrl.isNullOrEmpty()) {
+                                Glide.with(this@Profile)
+                                    .load(user.imageUrl)
+                                    .into(profileImageView)
+                            }
+                        } else {
+                            Log.e("ProfileActivity", "User data is null")
+                            Toast.makeText(this@Profile, "User data is null.", Toast.LENGTH_SHORT).show()
                         }
                     } else {
-                        Toast.makeText(this@profile, "Failed to parse user data.", Toast.LENGTH_SHORT).show()
+                        Log.e("ProfileActivity", "User data not found at path: datauser/$userId")
+                        Toast.makeText(this@Profile, "User data not found.", Toast.LENGTH_SHORT).show()
                     }
-                } else {
-                    Toast.makeText(this@profile, "User data not found.", Toast.LENGTH_SHORT).show()
                 }
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-                Log.e("ProfileActivity", "Database error: ${error.message}")
-                Toast.makeText(this@profile, "Failed to load user data.", Toast.LENGTH_SHORT).show()
-            }
-        })
+                override fun onCancelled(error: DatabaseError) {
+                    Log.e("ProfileActivity", "Database error: ${error.message}")
+                    Toast.makeText(this@Profile, "Failed to load user data: ${error.message}", Toast.LENGTH_SHORT).show()
+                }
+            })
     }
 
     private fun openGallery() {
@@ -140,7 +146,7 @@ class profile : AppCompatActivity() {
 
     private fun saveImageUrl(imageUrl: String) {
         val userId = auth.currentUser?.uid ?: return
-        database.child(userId).child("imageUrl").setValue(imageUrl)
+        database.child("datauser").child(userId).child("imageUrl").setValue(imageUrl)
             .addOnSuccessListener {
                 Toast.makeText(this, "Profile photo updated!", Toast.LENGTH_SHORT).show()
             }
@@ -169,7 +175,7 @@ class profile : AppCompatActivity() {
             email = emailEditText.text.toString()
         )
 
-        database.child(userId).setValue(updatedUser)
+        database.child("datauser").child(userId).setValue(updatedUser)
             .addOnSuccessListener {
                 Toast.makeText(this, "Profile updated successfully.", Toast.LENGTH_SHORT).show()
                 setEditable(false)

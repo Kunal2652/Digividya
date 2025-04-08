@@ -27,7 +27,10 @@
         <activity android:name="com.example.digividya.dashboard.MainActivity"></activity>
         <activity android:name="com.example.digividya.quizes.QuizzesActivity"></activity>
         <activity android:name="com.example.digividya.quizes.ResultActivity"></activity>
-
+        <activity android:name="com.example.digividya.notes.PdfViewerActivity"/>
+        <activity
+            android:name="com.example.digividya.class10.YouTubePlayerActivity"
+           />
         <activity android:name="com.example.digividya.clases.RecordedLecturesActivity"></activity>
         <activity android:name="com.example.digividya.clases.cclass9"></activity>
         <activity android:name="com.example.digividya.clases.cclass10"></activity>
@@ -38,17 +41,27 @@
         <activity android:name="com.example.digividya.class9.csst9"></activity>
         <activity android:name="com.example.digividya.class9.ceng9"></activity>
         <activity android:name="com.example.digividya.class10.cmaths10"></activity>
+        <activity android:name="com.example.digividya.class10.ceng10"></activity>
         <activity android:name="com.example.digividya.login.register"></activity>
-        <activity android:name="com.example.digividya.dashboard.profile"></activity>
+        <activity android:name="com.example.digividya.dashboard.Profile"></activity>
         <activity android:name="com.example.digividya.quizes.Qprolos"></activity>
         <activity android:name="com.example.digividya.task.todo"></activity>
         <activity android:name="com.example.digividya.dictionary.dictionary"></activity>
-        <activity android:name="com.example.digividya.class10.YouTubePlayerActivity"></activity>
         <activity android:name="com.example.digividya.notes.Notess"></activity>
         <activity android:name="com.example.digividya.notes.nclas9"></activity>
         <activity android:name="com.example.digividya.notes.nclas10"></activity>
         <activity android:name="com.example.digividya.notes.nclas11"></activity>
         <activity android:name="com.example.digividya.notes.nclas12"></activity>
+        <activity android:name="com.example.digividya.class10.neng10"></activity>
+        <activity android:name="com.example.digividya.class10.nmath10"></activity>
+        <activity android:name="com.example.digividya.class10.nsci10"></activity>
+        <activity android:name="com.example.digividya.class10.nsst10"></activity>
+        <activity android:name="com.example.digividya.class9.neng9"></activity>
+        <activity android:name="com.example.digividya.class9.nmath9"></activity>
+        <activity android:name="com.example.digividya.class9.nsci9"></activity>
+        <activity android:name="com.example.digividya.class9.nsst9"></activity>
+
+
 
 
     </application>

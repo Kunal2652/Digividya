@@ -19,16 +19,16 @@ class cmaths10 : AppCompatActivity() {
         )
 
         val videoIds = arrayOf(
-            "T2QnlGlJuu8",  // Video ID for the first video
-            "qP30DUgocw4",  // Video ID for the second video
-            "iVm9ilsqpOo",  // Video ID for the third video
-            "dx4Teh-nv3A",  // Video ID for the fourth video
-            "IhJ_h0NmZlI",  // Video ID for the fifth video
-            "SyYMFulCGOU",  // Video ID for the sixth video
-            "SLEGr2FKakE",  // Video ID for the seventh video
-            "CwP5ZbTge0g",  // Video ID for the eighth video
-            "ZMjacJB7Dig",  // Video ID for the ninth video
-            "UJRETS_SjpA"   // Video ID for the tenth video
+            "pRNEWJdLhJA",
+            "iw5FIkdVp2c",
+            "bl-TDU00UGM",
+            "Htk2kC-SHII",
+            "oydSOw7QJsc",
+            "YxVhwG6KA8o",
+            "2TZXGcV11ls",
+            "q0SPrihosoM",
+            "jeXiWiqsKvM",
+            "stfn4Uucjxs"
         )
 
         // Assign click listeners to each button
